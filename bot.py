@@ -47,12 +47,12 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("🎥 Movies Group", url="https://t.me/HindiHdMovies_Group"),
+                        InlineKeyboardButton("🎥 Movies Channel", url="https://t.me/HindiHdMoviesV3")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("🤖 About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("🧑🏻‍💻About Dev", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -88,7 +88,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/DevsZone)",
+            await message.reply_text("Sorry, You are banned!\n\nContact My 🧑🏻‍💻[Owner](https://t.me/DevsZone)",
                                      disable_web_page_preview=True)
             return
 
@@ -281,8 +281,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
+                        InlineKeyboardButton("🎥 Movies Group",
+                                             url="https://t.me/HindiHdMovies_Group")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -300,8 +300,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
+                        InlineKeyboardButton("🎥 Movies Group",
+                                             url="https://t.me/HindiHdMovies_Group")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -319,8 +319,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("🎥 Movies Group", url="https://t.me/HindiHdMovies_Group"),
+                        InlineKeyboardButton("🎥 Movies Channel", url="https://t.me/HindiHdMoviesV3")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -336,7 +336,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/DevsZone).",
+                        text="Sorry Sir, You are Banned to use me. Contact my 🧑🏻‍💻[Owner](https://telegram.dog/Insane_Banda).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -361,7 +361,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/DevsZone).",
+                    text="Something went Wrong. Contact my 🧑🏻‍💻[Owner](https://telegram.dog/Insane_Banda).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -373,12 +373,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("🎥 Movies Group", url="https://t.me/HindiHdMovies_Group"),
+                        InlineKeyboardButton("🎥 Movies Channel", url="https://t.me/HINDI_HD_MOOVIES")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("🤖 About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("🧑🏻‍💻About Dev", callback_data="aboutdevs")
                     ]
                 ]
             )
